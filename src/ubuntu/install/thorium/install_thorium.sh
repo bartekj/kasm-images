@@ -5,7 +5,7 @@ wget --no-hsts -P /etc/apt/sources.list.d/ http://dl.thorium.rocks/debian/dists/
 apt update
 
 apt install thorium-browser
-
+sed -i 's,/usr/bin/thorium-browser %U,/usr/bin/thorium-browser --no-sandbox  %U,g' /usr/share/applications/thorium-browser.desktop
 cp /usr/share/applications/thorium-browser.desktop $HOME/Desktop/ 
 chmod +x $HOME/Desktop/thorium-browser.desktop
 chown 1000:1000 $HOME/Desktop/thorium-browser.desktop
