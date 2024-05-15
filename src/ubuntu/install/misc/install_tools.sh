@@ -7,5 +7,5 @@ if [ "$DISTRO" = centos ]; then
   yum install xdotool -y
 else
   apt-get update
-  apt-get install -y nano zip xdotool nmap screen iputils-ping mtr irssi cifs-utils gvfs-backends rar unrar jq 
+  apt-get install -y nano zip xdotool nmap screen iputils-ping mtr irssi cifs-utils gvfs-backends jq kitty kitty-shell-integration kitty-terminfo 
 fi
