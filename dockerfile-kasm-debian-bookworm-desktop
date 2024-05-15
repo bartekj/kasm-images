@@ -6,7 +6,7 @@ USER root
 
 ENV HOME /home/kasm-default-profile
 ENV STARTUPDIR /dockerstartup
-ENV VERSION 1.1
+ENV VERSION 1.2
 WORKDIR $HOME
 
 ### Envrionment config
